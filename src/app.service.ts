@@ -1,9 +1,8 @@
-import { Injectable } from '@nestjs/common';
-import { ApiOperation } from '@nestjs/swagger';
+import { Get, Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  @ApiOperation({ summary: 'Obtém todos os usuários' })
+  @Get()
   getHello(): string {
     return 'Olá mundo!';
   }
